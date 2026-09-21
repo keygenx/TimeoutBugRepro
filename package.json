@@ -1,0 +1,24 @@
+{
+	"name": "adapter-node-tla-deadlock-repro",
+	"private": true,
+	"version": "1.0.0",
+	"type": "module",
+	"scripts": {
+		"build": "vite build",
+		"start": "node build/index.js",
+		"repro": "node scripts/repro.mjs",
+		"use:5.5.4": "npm i -D --no-save @sveltejs/adapter-node@5.5.4",
+		"use:5.5.7": "npm i -D --no-save @sveltejs/adapter-node@5.5.7",
+		"chunkgraph": "node scripts/chunkgraph.mjs"
+	},
+	"devDependencies": {
+		"@mdit/plugin-katex-slim": "^0.24.0",
+		"@sveltejs/adapter-node": "5.5.7",
+		"@sveltejs/kit": "^2.70.3",
+		"@sveltejs/vite-plugin-svelte": "^7.3.0",
+		"katex": "^0.16.25",
+		"markdown-it": "^14.1.0",
+		"svelte": "^5.56.10",
+		"vite": "8.3"
+	}
+}
